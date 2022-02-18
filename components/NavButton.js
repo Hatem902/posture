@@ -3,7 +3,7 @@ import NextLink from 'next/link';
 const NavButton = ({ name }) => {
   return (
     <NextLink href='/' passHref>
-      <Button as='a' variant='ghost' aria-label='Home'>
+      <Button as='a' variant='ghost'>
         {name}
       </Button>
     </NextLink>
