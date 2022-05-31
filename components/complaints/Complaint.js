@@ -1,6 +1,15 @@
-import { Grid, GridItem, Text } from '@chakra-ui/react';
+import {
+  Grid,
+  GridItem,
+  Text,
+  useColorMode,
+  useColorModeValue,
+} from '@chakra-ui/react';
 
 const Complaint = ({ complaint }) => {
+  const color = useColorModeValue('gray.800', 'whiteAlpha.900');
+  const bgc = useColorModeValue('blackAlpha.300', 'gray.dark');
+
   return (
     <Grid
       px={4}
@@ -16,9 +25,9 @@ const Complaint = ({ complaint }) => {
       borderRadius='lg'
       /* py={{ base: 2, '2xl': 2 }} */
       py={2}
-      color='whiteAlpha.900'
+      color={color}
       _hover={{
-        background: 'gray.dark',
+        background: bgc,
         cursor: 'pointer',
       }}
     >

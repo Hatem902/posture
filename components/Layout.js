@@ -4,7 +4,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Nav />
-      <Stack
+      {children}
+      {/*  <Stack
         as='main'
         spacing={8}
         justifyContent='center'
@@ -21,7 +22,7 @@ const Layout = ({ children }) => {
           w='100%'
         ></Flex>
         {children}
-      </Stack>
+      </Stack> */}
     </>
   );
 };
